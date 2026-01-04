@@ -1,80 +1,76 @@
-# Sales & Profitability Analysis
+# Sales & Profitability Diagnostic
 
 ## Project Overview
-This project analyzes sales and profitability performance using the Superstore dataset, with the objective of identifying margin erosion, evaluating the effectiveness of discounting, and isolating actionable levers to improve business performance.
+This project analyzes sales and profitability performance to identify margin leakage, assess the impact of discounting, and isolate structurally loss-making segments.
 
-The focus is not on creating many charts, but on answering **business-relevant questions** through structured analysis, clear storytelling, and decision-oriented insights.
+The focus is not on descriptive dashboards, but on diagnostic, decision-oriented analysis—answering *why* profits underperform despite strong sales and *where* management should intervene first.
+
+The project concludes with an executive-style brief summarizing key KPIs, insights, and recommended actions.
 
 ---
 
 ## Business Questions Addressed
-- Which regions drive revenue, and which erode profitability?
-- Does higher discounting actually improve sales or profitability?
-- Which product categories and sub-categories are structurally loss-making?
+- How profitable is the business at an overall and order level?
+- What percentage of orders are structurally loss-making?
+- Do higher discounts actually improve profitability?
+- Which regions, categories, and sub-categories drive profit vs losses?
 - Are losses driven by demand issues or margin inefficiencies?
-- Where should management intervene first to improve margins?
+- What actions would most effectively improve margins?
+
+---
+
+## Key KPIs
+- Total Sales
+- Total Profit
+- Overall Profit Margin
+- Loss-Making Orders (% of total orders)
+- Average Discount
+- Profit Margin by Discount Level
+- Profit Contribution by Region and Category
 
 ---
 
 ## Key Insights
-
-### Regional Performance
-- The **West region** demonstrates strong unit economics, combining high sales with a profit margin of ~22%.
-- The **Central region** consistently underperforms, with a negative profit margin (~ -10%), despite offering the **highest average discounts**.
-- High discounting in Central does **not** translate into proportional sales or profit gains, indicating structural issues rather than demand shortfalls.
-
-### Category-Level Performance
-- Sales are evenly distributed across **Technology**, **Office Supplies**, and **Furniture**.
-- Profitability is not:
-  - Technology and Office Supplies generate the majority of profit.
-  - Furniture contributes significant revenue but minimal profit.
-
-### Sub-Category Deep Dive (Furniture)
-- Losses in Furniture are **concentrated**, not category-wide.
-- **Tables and Bookcases** are the primary loss drivers:
-  - High sales volume
-  - Persistent negative profit
-- Chairs and Furnishings remain profitable, indicating viable demand and pricing in parts of the category.
-
-### Discount Effectiveness
-- Discounting is effective in Technology and Office Supplies.
-- In Furniture and Central region, discounting increases volume marginally but worsens margins.
-- Conclusion: **Discounts are not a universal growth lever.**
+- ~20% of orders are loss-making, indicating structural margin leakage rather than isolated issues.
+- High-discount orders contribute a meaningful share of revenue but generate net losses, making aggressive discounting unprofitable.
+- Certain regions generate strong sales volumes while consistently underperforming on margins.
+- Losses are concentrated in specific sub-categories, suggesting pricing and cost-structure issues rather than weak demand.
 
 ---
 
-## Business Recommendations
-1. Reassess pricing and discount strategy for Furniture sub-categories, particularly Tables and Bookcases.
-2. Reduce blanket discounting in the Central region; investigate product mix and cost structure instead.
-3. Prioritize high-margin categories (Technology) for growth.
-4. Focus on margin recovery, not just revenue expansion.
+## Analysis Approach
+- Data cleaning and exploratory analysis using Python (Pandas)
+- Order-level profitability analysis
+- Discount segmentation to evaluate revenue vs margin trade-offs
+- Regional and category-level margin diagnostics
+- KPI calculation and validation
+- Executive-level synthesis of insights and recommendations
 
 ---
 
-## Tools & Skills Demonstrated
+## Tools & Technologies
 - Python (Pandas, NumPy)
-- Data cleaning & feature engineering
-- Exploratory data analysis (EDA)
-- Business-focused data storytelling
-- Visualization (Matplotlib, Seaborn)
-- Power BI (dashboarding & KPI design)
-- Translating analysis into executive recommendations
+- Jupyter Notebook
+- Power BI (Dashboard & KPI visualization)
+- GitHub (Version control & documentation)
 
 ---
 
 ## Deliverables
-- Python analysis notebook (.py / .ipynb)
-- Power BI dashboard (.pbix)
-- Executive-level written insights
-- Clean, decision-oriented storytelling
+- Power BI dashboard for KPI tracking and segmentation
+- Python notebook with full analysis and calculations
+- Executive Brief (PDF) summarizing findings and recommendations
 
 ---
 
-## Why This Project Matters
-This project demonstrates the ability to:
-- Think beyond charts and focus on **business impact**
-- Identify root causes, not just symptoms
-- Communicate insights clearly to non-technical stakeholders
-- Balance analytical depth with executive clarity
+## Key Recommendations
+- Introduce discount caps for structurally loss-making products
+- Reprice or rationalize consistently negative-margin sub-categories
+- Conduct region-specific pricing reviews to reflect cost differences
+- Track profit per order as a primary KPI, not revenue alone
 
-This is an analytics project designed to mirror real-world decision-making, not a classroom exercise.
+---
+
+## Author
+Anshumaan Mishra  
+Data Analyst  
