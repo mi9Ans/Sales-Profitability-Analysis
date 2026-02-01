@@ -1,76 +1,44 @@
-# Sales & Profitability Diagnostic
+Sales & Profitability Analysis: Margin Leakage & Discount Governance
+📌 Project Overview
+This project involved a deep-dive analysis of a $2.2M+ sales transaction dataset to evaluate pricing effectiveness and overall profit performance. The goal was to move beyond high-level sales figures to understand the "true" profitability at an order level and identify where the business was losing money.
++1
 
-## Project Overview
-This project analyzes sales and profitability performance to identify margin leakage, assess the impact of discounting, and isolate structurally loss-making segments.
+🚀 Key Insights & Business Impact
 
-The focus is not on descriptive dashboards, but on diagnostic, decision-oriented analysis—answering *why* profits underperform despite strong sales and *where* management should intervene first.
+Margin Leakage Detection: Identified that ~20% of total orders were generating a negative contribution margin.
 
-The project concludes with an executive-style brief summarizing key KPIs, insights, and recommended actions.
 
----
+Root Cause Analysis: Pinpointed specific discounting patterns as the primary driver for profit-negative transactions.
 
-## Business Questions Addressed
-- How profitable is the business at an overall and order level?
-- What percentage of orders are structurally loss-making?
-- Do higher discounts actually improve profitability?
-- Which regions, categories, and sub-categories drive profit vs losses?
-- Are losses driven by demand issues or margin inefficiencies?
-- What actions would most effectively improve margins?
 
----
+Risk Mitigation: Developed a Power BI dashboard to provide real-time visibility into high-risk orders and discount impact.
 
-## Key KPIs
-- Total Sales
-- Total Profit
-- Overall Profit Margin
-- Loss-Making Orders (% of total orders)
-- Average Discount
-- Profit Margin by Discount Level
-- Profit Contribution by Region and Category
 
----
+Strategic Governance: Structured the analysis into performance monitoring metrics to support executive-level pricing control.
 
-## Key Insights
-- ~20% of orders are loss-making, indicating structural margin leakage rather than isolated issues.
-- High-discount orders contribute a meaningful share of revenue but generate net losses, making aggressive discounting unprofitable.
-- Certain regions generate strong sales volumes while consistently underperforming on margins.
-- Losses are concentrated in specific sub-categories, suggesting pricing and cost-structure issues rather than weak demand.
+🛠️ Technical Workflow
+1. Data Processing (SQL)
+Utilized CTEs and Window Functions to calculate order-level profitability and rank customer segments.
++2
 
----
+Performed discount band analysis across customer and product dimensions.
++2
 
-## Analysis Approach
-- Data cleaning and exploratory analysis using Python (Pandas)
-- Order-level profitability analysis
-- Discount segmentation to evaluate revenue vs margin trade-offs
-- Regional and category-level margin diagnostics
-- KPI calculation and validation
-- Executive-level synthesis of insights and recommendations
+2. Exploratory Data Analysis (Python)
+Used Python (Pandas) to evaluate pricing effectiveness and segment the dataset for deeper trend analysis.
++2
 
----
+3. Data Visualization (Power BI)
+Engineered KPIs to monitor margin risk and track profit trends over time.
 
-## Tools & Technologies
-- Python (Pandas, NumPy)
-- Jupyter Notebook
-- Power BI (Dashboard & KPI visualization)
-- GitHub (Version control & documentation)
+Created visual reports to show the correlation between high discount rates and negative margin outcomes.
 
----
+📂 Repository Structure
+/SQL_Queries: Scripts for data extraction and profitability KPI calculation.
 
-## Deliverables
-- Power BI dashboard for KPI tracking and segmentation
-- Python notebook with full analysis and calculations
-- Executive Brief (PDF) summarizing findings and recommendations
+/Python_Notebooks: Exploratory Data Analysis (EDA) and segmentation logic.
 
----
+/Dashboards: Power BI files and visualization screenshots.
 
-## Key Recommendations
-- Introduce discount caps for structurally loss-making products
-- Reprice or rationalize consistently negative-margin sub-categories
-- Conduct region-specific pricing reviews to reflect cost differences
-- Track profit per order as a primary KPI, not revenue alone
-
----
-
-## Author
-Anshumaan Mishra  
-Data Analyst  
+📈 Business Relevance
+This analysis directly supports margin protection, discount governance, and sales performance analysis, ensuring that growth is profitable and sustainable
