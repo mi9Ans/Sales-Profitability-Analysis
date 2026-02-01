@@ -1,63 +1,62 @@
-<details>
-<summary><strong>📊 Sales & Profitability Analysis — Margin Leakage & Discount Governance </strong></summary>
+# 📊 Sales & Profitability Analysis  
+## Margin Leakage & Discount Governance
 
 ---
 
 ## 📌 Project Overview  
 
-This project delivers an end-to-end profitability deep dive on a **$2.2M+ sales transaction dataset**, focused on evaluating **pricing effectiveness** and uncovering the *true order-level profit performance*.  
+This project delivers an end-to-end profitability deep dive using a **$2.2M+ sales transaction dataset** to evaluate pricing effectiveness and uncover the *true order-level profit performance*.  
 
-Instead of stopping at revenue metrics, the analysis isolates **where and why the business is losing money**, enabling data-backed pricing control and margin protection.
+Rather than focusing only on revenue, the analysis identifies **where and why margin erosion occurs**, enabling data-backed pricing control and margin protection.
 
 ---
 
 ## 🚀 Key Insights & Business Impact  
 
 ### 🔻 Margin Leakage Detection  
-Approximately **20% of total orders** were found to generate a **negative contribution margin**, directly eroding overall profitability.
+Approximately **20% of total orders** were generating a **negative contribution margin**, directly reducing overall profitability.
 
 ### 🎯 Root Cause Analysis  
-The primary driver of loss-making transactions was traced to **uncontrolled discounting patterns** across specific product and customer segments.
+The primary cause of loss-making transactions was traced to **aggressive discounting patterns** across specific product categories and customer segments.
 
 ### ⚠️ Risk Mitigation  
-A **Power BI dashboard** was developed to provide **real-time visibility** into:
+A **Power BI dashboard** was developed to provide clear visibility into:
 - High-risk orders  
 - Discount impact on margins  
 - Profitability trends over time  
 
 ### 🏛️ Strategic Governance  
-The analysis framework was structured into performance monitoring metrics that support **executive-level pricing governance** and **discount policy enforcement**.
+The analysis framework was structured into monitoring metrics to support **pricing governance** and improve **discount control decisions**.
 
 ---
 
 ## 🛠️ Technical Workflow  
 
-### 1️⃣ Data Processing (SQL)  
-- Used **CTEs** and **Window Functions** to calculate **order-level contribution margins**  
-- Ranked customer and product segments by profitability  
-- Conducted **discount band analysis** across multiple business dimensions  
+### 1️⃣ Data Analysis (Python)  
+- Processed transactional sales data using **Pandas**  
+- Calculated order-level profitability and contribution margins  
+- Performed discount impact analysis  
+- Identified margin risk patterns and loss-driving segments  
 
-### 2️⃣ Exploratory Data Analysis (Python)  
-- Leveraged **Pandas** for pricing effectiveness analysis  
-- Performed segmentation to identify margin risk clusters  
-- Conducted trend and distribution analysis for discount behavior  
-
-### 3️⃣ Data Visualization (Power BI)  
-- Engineered KPIs to monitor:
+### 2️⃣ Business Intelligence (Power BI)  
+- Built KPI-driven dashboards to monitor:
   - Margin risk  
   - Discount exposure  
   - Profit performance trends  
-- Built visual reports showing the correlation between **high discount rates** and **negative margin outcomes**
+- Created visuals highlighting the correlation between **high discounts** and **negative margin outcomes**
+
+### 3️⃣ SQL Usage  
+SQL logic and profitability calculations were applied during the analytical process, although SQL scripts are not included in this repository.
 
 ---
 
 ## 📂 Repository Structure  
 
-```
-/SQL_Queries        → Profitability logic, KPI calculations, margin analysis  
-/Python_Notebooks   → EDA, segmentation, pricing effectiveness analysis  
-/Dashboards         → Power BI files and visualization assets  
-```
+/Sample - Superstore.xls → Raw sales dataset  
+/sales_&_profit_analysis.py → Python data analysis script  
+/Superstore_Analysis.pbix → Power BI dashboard file  
+/Sales & Profitability Analysis.png → Dashboard snapshot  
+/Sales & Profitability Diagnostic — Executive Brief → Business summary report  
 
 ---
 
@@ -74,7 +73,6 @@ The outcome ensures that revenue growth is **profitable, controlled, and sustain
 
 ---
 
-**Bottom line:** This is not a sales report — it’s a **profit defense system**.
+## 🧠 Key Takeaway  
 
-</details>
-
+This is not a standard sales report — it is a **profitability diagnostic system** designed to detect margin leakage and support smarter pricing decisions.
